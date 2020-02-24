@@ -11,7 +11,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <div className="wrapper content-wrapper">
