@@ -3,8 +3,11 @@
     /* grid-area: content; */
 }
 
-.profile div {
+.profile__block {
     padding: 5px;
     background-color: #f1f1f1;
     margin-bottom: 20px;
+}
+.block__img{
+    max-width: 100%;
 }

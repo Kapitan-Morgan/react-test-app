@@ -6,9 +6,6 @@
     padding: 20px 0;
     display: flex;
 }
-.footer-menu a:hover{
-    color: #61dafb;
-}
 .left-block{
     width: calc(33.3333%);
 }
@@ -23,13 +20,13 @@
     width: 50%;
     padding-top: 20px;
 }
-.link-block{
+.footer-menu__link-block{
     width: 50%;
     padding-top: 20px;
     display: inline-flex;
     flex-direction: column;
 }
-.link-block .label-link{
+.footer-menu__label-link{
     color: #999;
     font-size: 14px;
     font-weight: 700;
@@ -38,8 +35,10 @@
     text-align: start;
     letter-spacing: 0.08em;
 }
-.link-block a{
+.link-block__link{
     line-height: 2;
-    text-decoration: none;
     color: white;
+}
+.link-block__link:hover{
+    color: #61dafb;
 }

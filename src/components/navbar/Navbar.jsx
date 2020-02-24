@@ -4,21 +4,21 @@ import './navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="nav">
-      <div>
-        <a href="/#">Profile</a>
+    <nav className="navbar">
+      <div className="item navbar__item">
+        <a className="link item__link" href="/">Home</a>
       </div>
-      <div>
-        <a href="/#">Messages</a>
+      <div className="item navbar__item">
+        <a className="link item__link" href="/dialogs">Messages</a>
       </div>
-      <div>
-        <a href="/#">News</a>
+      <div className="item navbar__item">
+        <a className="link item__link" href="/profile">Profile</a>
       </div>
-      <div>
-        <a href="/#">Music</a>
+      <div className="item navbar__item">
+        <a className="link item__link" href="/#">Music</a>
       </div>
-      <div>
-        <a href="/#">Settings</a>
+      <div className="item navbar__item">
+        <a className="link item__link" href="/#">Settings</a>
       </div>
     </nav>
   )

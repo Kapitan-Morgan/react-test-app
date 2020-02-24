@@ -1,22 +1,22 @@
 import React from 'react';
-
+import MyPosts from './MyPosts/MyPosts';
 import './profile.css';
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className="profile">
-      <div>
-        <img className="img" src="https://avatanplus.com/files/resources/original/5b1f86e3923d2163f326e90f.jpg" alt=""/>
-        <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, perferendis?</p></div>
+      <div className="block profile__block">
+        <img className="block__img" src={props.mainUrl} alt=""/>
+        <div className="desc profile__desc">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo magni id, 
+            aliquam quibusdam nam ut, quos soluta harum natus, deleniti accusamus consequuntur 
+            molestias minima odit voluptatem numquam officia incidunt. Beatae omnis dicta vero 
+            cupiditate neque sunt voluptas, tempora quae. Assumenda.
+          </p>
+        </div>
       </div>
-      <div>
-        <img className="img" src="https://avatanplus.com/files/resources/original/5b1f86e3923d2163f326e90f.jpg" alt=""/>
-        <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, perferendis?</p></div>
-      </div>
-      <div>
-        <img className="img" src="https://avatanplus.com/files/resources/original/5b1f86e3923d2163f326e90f.jpg" alt=""/>
-        <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, perferendis?</p></div>
-      </div>
+      <MyPosts />
     </div>
   )
 }

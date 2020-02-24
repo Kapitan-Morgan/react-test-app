@@ -1,14 +1,20 @@
-.nav {
+.navbar {
     /* background-color: green; */
     grid-area: nav;
     background-color: #d9d9d9;
     font-size: 20px;
-    padding: 5px 0 0 10px;
+    padding: 0 10px;
     /* padding: 10px; */
 }
-
-.nav a {
-    text-decoration: none;
+.navbar__item{
+    border-bottom: 1px solid white;
+}
+.navbar__item:hover{
+    transition: all 0.1s ease;
+    border-color: gray;
+    padding-left: 5px;
+}
+.item__link {
     color: white;
     line-height: 1.5;
 }

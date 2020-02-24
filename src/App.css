@@ -31,3 +31,9 @@ body{
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 3fr;
 }
+.content-wrapper__content{
+  grid-area: content;
+}
+.link{
+  text-decoration: none;
+}

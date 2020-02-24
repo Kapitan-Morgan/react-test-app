@@ -12,42 +12,42 @@ const Footer = () => {
           </div>
           <div className="right-block">
             <div className="wrapper-link">
-              <div className="link-block">
-                <div className="label-link">DOCS</div>
-                <a href="/#">Installation</a>
-                <a href="/#">Main Concepts</a>
-                <a href="/#">Advanced Guides</a>
-                <a href="/#">API Reference</a>
-                <a href="/#">Hooks</a>
-                <a href="/#">Testing</a>
-                <a href="/#">Concurrent Mode</a>
-                <a href="/#">Contributing</a>
-                <a href="/#">FAQ</a>
+              <div className="link-block footer-menu__link-block">
+                <div className="label-link footer-menu__label-link">DOCS</div>
+                <a className="link link-block__link" href="/#">Installation</a>
+                <a className="link link-block__link" href="/#">Main Concepts</a>
+                <a className="link link-block__link" href="/#">Advanced Guides</a>
+                <a className="link link-block__link" href="/#">API Reference</a>
+                <a className="link link-block__link" href="/#">Hooks</a>
+                <a className="link link-block__link" href="/#">Testing</a>
+                <a className="link link-block__link" href="/#">Concurrent Mode</a>
+                <a className="link link-block__link" href="/#">Contributing</a>
+                <a className="link link-block__link" href="/#">FAQ</a>
               </div>
             </div>
             <div className="wrapper-link">
-              <div className="link-block">
-                <div className="label-link">CHANNELS</div> 
-                <a href="/#">GitHub</a>
-                <a href="/#">Stack Overflow</a>
-                <a href="/#">Forums</a>
-                <a href="/#">DEV</a>
-                <a href="/#">Facebook</a>
-                <a href="/#">Twitter</a>
+              <div className="link-block footer-menu__link-block">
+                <div className="label-link footer-menu__label-link">CHANNELS</div> 
+                <a className="link link-block__link" href="/#">GitHub</a>
+                <a className="link link-block__link" href="/#">Stack Overflow</a>
+                <a className="link link-block__link" href="/#">Forums</a>
+                <a className="link link-block__link" href="/#">DEV</a>
+                <a className="link link-block__link" href="/#">Facebook</a>
+                <a className="link link-block__link" href="/#">Twitter</a>
               </div>
             </div>
             <div className="wrapper-link">
-              <div className="link-block">
-                <div className="label-link">COMMUNITY</div>
-                <a href="/#">Code of Conduct</a>
-                <a href="/#">Community Resources</a>
+              <div className="link-block footer-menu__link-block">
+                <div className="label-link footer-menu__label-link">COMMUNITY</div>
+                <a className="link link-block__link" href="/#">Code of Conduct</a>
+                <a className="link link-block__link" href="/#">Community Resources</a>
               </div>
             </div>
             <div className="wrapper-link">
-              <div className="link-block">
-                <div className="label-link">MORE</div>
-                <a href="/#">Tutorial</a>
-                <a href="/#">Blog</a>
+              <div className="link-block footer-menu__link-block">
+                <div className="label-link footer-menu__label-link">MORE</div>
+                <a className="link link-block__link" href="/#">Tutorial</a>
+                <a className="link link-block__link" href="/#">Blog</a>
               </div>
             </div>
           </div>
