@@ -5,8 +5,8 @@ import './dialogs.css'
 
 const Dialogs = (props) => {
   
-  let dialogsElem = props.dialogs.map( d => <Dialog id={d.id} name={d.name}/> )
-  let messagesElem = props.messages.map( m => <Message id={m.id} message={m.message}/> )
+  let dialogsElem = props.state.dialogs.map( d => <Dialog id={d.id} name={d.name}/> )
+  let messagesElem = props.state.messages.map( m => <Message id={m.id} message={m.message}/> )
 
   return (
     <div className="dialogs">

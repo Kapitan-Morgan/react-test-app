@@ -7,7 +7,7 @@ const Profile = (props) => {
   return (
     <div className="profile">
       <Info mainUrl="https://img.fonwall.ru/o/2p/canada-moraine-lake-ozero-gory.jpg?route=mid&h=750"/>
-      <MyPosts posts={props.posts} />
+      <MyPosts posts={props.state.posts} />
     </div>
   )
 }

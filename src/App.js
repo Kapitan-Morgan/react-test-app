@@ -16,19 +16,17 @@ const App = (props) => {
       <div className="app-wrapper">
         <Header />
         <div className="wrapper content-wrapper">
-          <Navbar />
+          <Navbar state={props.state.navbar} />
           <div className="content content-wrapper__content">
-            {/* <Route path='/dialogs' component={Dialogs}/>
-            <Route path='/profile' component={Profile}/> */}
             <Switch>
               <Route exact path='/'>
                 <Home/>
               </Route>
               <Route path='/dialogs'>
-                <Dialogs dialogs={props.dialogs} messages={props.messages}/>
+                <Dialogs state={props.state.messagesPage} />
               </Route>
               <Route path='/profile'>
-                <Profile posts={props.posts}/>
+                <Profile state={props.state.profilePage} />
               </Route>
             </Switch>
           </div>
