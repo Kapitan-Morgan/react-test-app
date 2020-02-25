@@ -1,0 +1,20 @@
+.dialogs{
+    display: flex;
+    margin: 10px;
+    background-color: #d9d9d9;
+}
+.dialog-user{
+    width: 30%;
+}
+.dialog-messages{
+    width: 70%;
+}
+.dialog-user__element{
+    padding: 5px 10px;
+}
+.dialog-user__link{
+    color: black;
+}
+.dialog-user__link_active{
+    color: red;
+}

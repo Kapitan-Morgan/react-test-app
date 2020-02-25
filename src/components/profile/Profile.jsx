@@ -1,22 +1,13 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
+import Info from './Info/Info'
 import './profile.css';
 
 const Profile = (props) => {
   return (
     <div className="profile">
-      <div className="block profile__block">
-        <img className="block__img" src={props.mainUrl} alt=""/>
-        <div className="desc profile__desc">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo magni id, 
-            aliquam quibusdam nam ut, quos soluta harum natus, deleniti accusamus consequuntur 
-            molestias minima odit voluptatem numquam officia incidunt. Beatae omnis dicta vero 
-            cupiditate neque sunt voluptas, tempora quae. Assumenda.
-          </p>
-        </div>
-      </div>
-      <MyPosts />
+      <Info mainUrl="https://img.fonwall.ru/o/2p/canada-moraine-lake-ozero-gory.jpg?route=mid&h=750"/>
+      <MyPosts posts={props.posts} />
     </div>
   )
 }
