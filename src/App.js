@@ -12,28 +12,26 @@ import './App.css';
 
 const App = (props) => {
   return (
-    <BrowserRouter>
-      <div className="app-wrapper">
-        <Header />
-        <div className="wrapper content-wrapper">
-          <Navbar state={props.state.navbar} />
-          <div className="content content-wrapper__content">
-            <Switch>
-              <Route exact path='/'>
-                <Home/>
-              </Route>
-              <Route path='/dialogs'>
-                <Dialogs state={props.state.messagesPage} />
-              </Route>
-              <Route path='/profile'>
-                <Profile state={props.state.profilePage} />
-              </Route>
-            </Switch>
-          </div>
+    <div className="app-wrapper">
+      <Header />
+      <div className="wrapper content-wrapper">
+        <Navbar state={props.state.navbar} />
+        <div className="content content-wrapper__content">
+          <Switch>
+            <Route exact path='/'>
+              <Home/>
+            </Route>
+            <Route path='/dialogs'>
+              <Dialogs state={props.state.messagesPage} />
+            </Route>
+            <Route path='/profile'>
+              <Profile state={props.state.profilePage} store={props.store} />
+            </Route>
+          </Switch>
         </div>
-        <Footer />
       </div>
-    </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 
