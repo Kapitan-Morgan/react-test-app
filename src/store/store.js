@@ -1,3 +1,6 @@
+import profileReduser from "./profileReducer";
+import dialogsReduser from "./dialogsReducer";
+import friendsReduser from "./friendsReducer";
 
 let store = {
   _subscriber() {
@@ -28,7 +31,8 @@ let store = {
         {id: 3, message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, temporibus!'},
         {id: 4, message: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, incidunt.'},
         {id: 5, message: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, quis.'},
-      ]
+      ],
+      newMessageBody: ''
     },
     navbar: {
       friends: [
@@ -38,12 +42,14 @@ let store = {
       ]
     }
   },
+
   getState() {
     return this._state;
   },
   subscribe(observer) {
     this._subscriber = observer;
   },
+
   addPost(){
     let newPost = {
       id: this._state.profilePage.posts.slice(-1).pop().id + 1,
@@ -56,6 +62,15 @@ let store = {
   },
   updateNewPostText(newText){
     this._state.profilePage.newPostText = newText;
+    this._subscriber(this);
+  },
+
+  dispatch(action){ // { type: 'ADD-POST' }
+
+    this._state.profilePage = profileReduser(this._state.profilePage, action);
+    this._state.messagesPage = dialogsReduser(this._state.messagesPage, action);
+    this._state.navbar = friendsReduser(this._state.navbar, action);
+
     this._subscriber(this);
   }
 }

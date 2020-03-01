@@ -22,10 +22,10 @@ const App = (props) => {
               <Home/>
             </Route>
             <Route path='/dialogs'>
-              <Dialogs state={props.state.messagesPage} />
+              <Dialogs state={props.state.messagesPage} dispatch={props.dispatch} />
             </Route>
             <Route path='/profile'>
-              <Profile state={props.state.profilePage} store={props.store} />
+              <Profile state={props.state.profilePage} dispatch={props.dispatch} />
             </Route>
           </Switch>
         </div>
