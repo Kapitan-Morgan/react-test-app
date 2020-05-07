@@ -32,7 +32,7 @@ const Dialogs = (props) => {
         </div>
         <div className="new-message__nav">
           <button onClick={ addMessage } className="button new-message__button">
-            <span>Send Message</span>
+            <span>Отправить Message</span>
             <i className="new-message__i"></i>
           </button>
         </div>
